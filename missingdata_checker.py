@@ -47,6 +47,7 @@ for lib in percentages:
     if percentages[lib] > 0.7 :
         low_quality.append(lib)
 len(low_quality)/2
+low_quality.sort()
 
 #Number of libraries with low missing data
 high_quality=[]
@@ -54,3 +55,4 @@ for lib in percentages:
     if percentages[lib] < 0.3 :
         high_quality.append(lib)
 len(high_quality)/2
+high_quality.sort()
